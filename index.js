@@ -5,7 +5,7 @@ const express = require('express')
 const app =express()
 const url = 'mongodb+srv://superadmin:om.14511451@cluster0.2xwft.mongodb.net/sample_weatherdata?retryWrites=true&w=majority'
 const client = new MongoClient(url, { useNewUrlParser: true,useUnifiedTopology: true})
-app.get('/restaurants',async (req, res) => {
+app.get('/data',async (req, res) => {
   try{
 
      await client.connect()
